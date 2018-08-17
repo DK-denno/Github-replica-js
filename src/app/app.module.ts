@@ -6,11 +6,13 @@ import { ApiRequestService } from './request/api-request.service';
 
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
+import { FrontpageComponent } from './frontpage/frontpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent
+    SearchComponent,
+    FrontpageComponent
   ],
   imports: [
     BrowserModule,
