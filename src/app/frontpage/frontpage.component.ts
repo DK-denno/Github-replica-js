@@ -11,6 +11,7 @@ import { ApiRequestService } from '../request/api-request.service';
 export class FrontpageComponent implements OnInit {
 
   display$;
+  repo$;
 
   constructor(private http: HttpClient, public _service: ApiRequestService  ) { }
 
@@ -20,7 +21,7 @@ export class FrontpageComponent implements OnInit {
       console.log(data);
     });
     this._service.repository().subscribe(data => {
-      this.display$ = data;
+      this.repo$ = data;
       console.log(data);
     });
   }

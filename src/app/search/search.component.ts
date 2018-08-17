@@ -3,7 +3,7 @@ import { ApiRequestService } from '../request/api-request.service';
 import { HttpClient } from '@angular/common/http';
 import { FrontpageComponent } from '../frontpage/frontpage.component';
 import { environment } from '../../environments/environment';
-import { FrontpageComponent } from '../frontpage/frontpage.component';
+
 
 
 
@@ -17,7 +17,7 @@ export class SearchComponent implements OnInit {
 
   return$;
 
-  constructor( private http: HttpClient, _sevice: ApiRequestService,  public frontpagecomponent: FrontpageComponent  ) { }
+  constructor( private http: HttpClient, _sevice: ApiRequestService,    ) { }
 
   search(keyword) {
 
