@@ -6,7 +6,7 @@ import { ApiRequestService } from '../request/api-request.service';
   selector: 'app-frontpage',
   templateUrl: './frontpage.component.html',
   styleUrls: ['./frontpage.component.css'],
-  providers: [ApiRequestService];
+  providers: [ApiRequestService],
 })
 export class FrontpageComponent implements OnInit {
 
@@ -16,6 +16,10 @@ export class FrontpageComponent implements OnInit {
 
   ngOnInit() {
     this._service.frontpage().subscribe(data => {
+      this.display$ = data;
+      console.log(data);
+    });
+    this._service.repository().subscribe(data => {
       this.display$ = data;
       console.log(data);
     });
