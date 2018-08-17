@@ -11,7 +11,10 @@ export class ApiRequestService {
          return this.http.get('https://api.github.com/users/dk-denno?access_token=' + environment.key);
          console.log('service');
        }
-
+      repository() {
+          return this.http.get('https://api.github.com/users/dk-denno/repos' + environment.key);
+         console.log('service');
+      }
   constructor(private http: HttpClient) {
 
    }

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false
-  key: 'e8e3dfd4a57cfdc99b39bbec54fe3f6cf369602f';
+  key: ' d8c26023067050dd3d0e014d4e6477fd67918fc8';
 };
 
 /*

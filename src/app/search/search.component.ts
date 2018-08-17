@@ -22,7 +22,7 @@ export class SearchComponent implements OnInit {
   search(keyword) {
 
   this.http.get
-  ('' + keyword.value )
+  ('https://api.github.com/search/repositories?q=' + keyword.value )
   .subscribe(result => {
         this.return$ = result;
         console.log(result);
