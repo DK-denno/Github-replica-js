@@ -1,24 +1,22 @@
-.text{
-
-    font-size: 2em;
+h1{
+  text-align: center;
 }
-#repo{
-  margin-left: 100px;
+button:hover{
+  background-color:navy;
 
 }
-#repin{
-
-  color:white;
-  margin-left: 300px;
-}
-#rep{
-  background-image:url('../../bg1.jpg');
+button{
+  width: 150px;
 
 }
 a{
-  padding: 40px;
-  background-color: red;
+  text-decoration: none;
 }
-a:hover{
-  color:red;
+.card{
+  width: 550px;
+  padding-left: 200px;
+
+}
+#card{
+  padding-left: 350px;
 }

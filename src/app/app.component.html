@@ -1,6 +1,5 @@
 <h1 class="title">{{title}}</h1>
+<li><a routerLink='/search' routerLinkActive='active'>search</a></li>
+<li><a routerLink='/frontpage' routerLinkActive='active'>frontpage</a></li>
 
-<div class='jumbotron'>
-  <app-search></app-search>
-</div>
-<app-frontpage></app-frontpage>
+<router-outlet></router-outlet>

@@ -8,8 +8,10 @@ import { ApiRequestService } from './request/api-request.service';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
+
 const routes: Routes = [
-  {path: 'search', component: SearchComponent},
+  {path: 'frontpage', component: FrontpageComponent },
+  {path: 'search', component: SearchComponent}
 ];
 
 @NgModule({

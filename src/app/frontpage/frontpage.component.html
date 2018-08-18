@@ -1,11 +1,4 @@
 <div class='container'>
-<br>
-<br>
-<br>
-  <li><a routerLink='/search' routerLinkActive='active'>Click to Search</a></li>
-
-
-
 
 <div class="text">{{display$.login}}</div><br>
 
@@ -17,15 +10,20 @@
     following {{display$.following}}<br>
     I am based at {{display$.location}}<br>
   </div>
-<div id="rep">
-  <div id="repin">
+  <br>
   <h1>REPOSITORIES</h1>
-<div *ngFor='let repo of repo$ , let i = index'>
+
+
+
+<div *ngFor='let repo of repo$ , let i = index' id="card">
+  <div class="card">
       <h2>{{repo$[i].name}}</h2><br>
-  <a href='https://github.com/DK-denno/{{repo$[i].name}}'>LIVE SITE</a>
+<button class="btn btn-default"><a href='https://github.com/DK-denno/{{repo$[i].name}}'>LIVE SITE</a></button>
 <br>
 <br>
 </div>
-</div>
-</div>
+<br>
+<br>
+
+  </div>
 </div>
