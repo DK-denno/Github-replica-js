@@ -3,8 +3,7 @@ import { ApiRequestService } from '../request/api-request.service';
 import { HttpClient } from '@angular/common/http';
 import { FrontpageComponent } from '../frontpage/frontpage.component';
 import { environment } from '../../environments/environment';
-
-
+import { Search } from '../search';
 
 
 @Component({
