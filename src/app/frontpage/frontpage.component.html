@@ -1,11 +1,29 @@
-<app-search></app-search>
+<div class='container'>
+<div class='jumbotron'><app-search></app-search></div>
 <br>
 <br>
 <br>
-<img  src="{{display$.avatar_url}}" alt="{{display$.login}}"><br>
-{{display$.id}}
-{{display$.email}}
-{{display$.hireable}}
-{{display$.followers}}
-{{display$.following}}
-{{display$.location}}
+
+<div class="text">{{display$.login}}</div><br>
+<div class="row">
+  <div class="col-md-5">
+
+<img  src="{{display$.avatar_url}}" class="img-circle" alt="{{display$.login}}"><br>
+  <div class="text">
+    Github ID:{{display$.id}}<br>
+    Contact me @<a href="mailto:{{display$.email}}">{{display$.email}}</a><br>
+    followed by {{display$.followers}}<br>
+    following {{display$.following}}<br>
+    I am based at {{display$.location}}<br>
+  </div>
+</div>
+<div class="col-md-7">
+  REpositories
+<div *ngFor='let repo of repo$ , let i = index'>
+      <h2>{{repo$[i].name}}</h2><br>
+  <a href='https://github.com/DK-denno/{{repo$[i].name}}'>Click here to view repository on github site</a>
+<br>
+<br>
+  </div>
+</div>
+</div>

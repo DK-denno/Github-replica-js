@@ -12,7 +12,7 @@ export class ApiRequestService {
 
        }
       repository() {
-          return this.http.get('https://api.github.com/users/dk-denno/repos' + environment.apiUrl);
+          return this.http.get('https://api.github.com/users/dk-denno/repos');
 
       }
   constructor(private http: HttpClient) {

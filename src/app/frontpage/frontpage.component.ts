@@ -20,9 +20,9 @@ export class FrontpageComponent implements OnInit {
       this.display$ = data;
       console.log(data);
     });
-    this._service.repository().subscribe(data => {
-      this.repo$ = data;
-      console.log(data);
+    this._service.repository().subscribe(repo => {
+      this.repo$ = repo;
+      console.log(repo);
     });
   }
 
