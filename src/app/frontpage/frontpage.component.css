@@ -6,3 +6,19 @@
   margin-left: 100px;
 
 }
+#repin{
+
+  color:white;
+  margin-left: 300px;
+}
+#rep{
+  background-image:url('../../bg1.jpg');
+
+}
+a{
+  padding: 40px;
+  background-color: red;
+}
+a:hover{
+  color:red;
+}

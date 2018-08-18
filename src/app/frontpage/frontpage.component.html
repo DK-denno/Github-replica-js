@@ -1,12 +1,13 @@
 <div class='container'>
+<br>
+<br>
+<br>
+  <li><a routerLink='/search' routerLinkActive='active'>Click to Search</a></li>
 
-<br>
-<br>
-<br>
+
+
 
 <div class="text">{{display$.login}}</div><br>
-<div class="row">
-  <div class="col-md-5">
 
 <img  src="{{display$.avatar_url}}" class="img-circle" alt="{{display$.login}}"><br>
   <div class="text">
@@ -16,14 +17,15 @@
     following {{display$.following}}<br>
     I am based at {{display$.location}}<br>
   </div>
-</div>
-<div id="repo" class="col-md-4">
+<div id="rep">
+  <div id="repin">
   <h1>REPOSITORIES</h1>
 <div *ngFor='let repo of repo$ , let i = index'>
       <h2>{{repo$[i].name}}</h2><br>
-  <a href='https://github.com/DK-denno/{{repo$[i].name}}'>Click here to view repository on github site</a>
+  <a href='https://github.com/DK-denno/{{repo$[i].name}}'>LIVE SITE</a>
 <br>
 <br>
-  </div>
+</div>
+</div>
 </div>
 </div>

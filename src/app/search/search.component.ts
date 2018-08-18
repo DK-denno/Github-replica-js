@@ -14,27 +14,29 @@ import { Search } from '../search';
 })
 export class SearchComponent implements OnInit {
 
+
   return$;
 
   constructor( private http: HttpClient, _sevice: ApiRequestService,   ) { }
 
   search(keyword) {
+    this.http.get
+    ('https://api.github.com/search/users?q=' + keyword.value )
+    .subscribe(data => {
+      this.return$ = data.items;
+      console.log(this.return$);
+      // console.log(this.return$.items[0].login);
 
-  this.http.get
-  ('https://api.github.com/search/repositories?q=' + keyword.value )
-  .subscribe(result => {
-        this.search = result;
-        console.log(result);
-  });
-
-  this.http.get
-  ('https://api.github.com/search/users?q=' + keyword.value )
-  .subscribe(result => {
-        this.search = result;
-        console.log(result);
-        console.log(this.search );
-
-  });
+    });
+    // console.log(return$.data.items[0].login);
+  //
+  // this.http.get
+  // ('https://api.github.com/search/repositories?q=' + keyword.value )
+  // .subscribe(result => {
+  //       this.return$ = result;
+  //       console.log(result);
+  // });
+  //
 }
   ngOnInit() {
   }

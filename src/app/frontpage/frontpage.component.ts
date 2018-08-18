@@ -10,7 +10,7 @@ import { ApiRequestService } from '../request/api-request.service';
 })
 export class FrontpageComponent implements OnInit {
 
-  display$;
+  display$: any;
   repo$;
 
   constructor(private http: HttpClient, public _service: ApiRequestService  ) { }
@@ -18,11 +18,11 @@ export class FrontpageComponent implements OnInit {
   ngOnInit() {
     this._service.frontpage().subscribe(data => {
       this.display$ = data;
-      console.log(data);
+      console.log(this.display$.login);
     });
     this._service.repository().subscribe(repo => {
       this.repo$ = repo;
-      console.log(repo);
+      // console.log(repo);
     });
   }
 

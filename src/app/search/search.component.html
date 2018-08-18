@@ -2,4 +2,8 @@
   <input type="text" #keyword name="keyword" placeholder="search">
 <input type="button" (click)="search(keyword)" value="search">
 </form>
-{{search.items.avatar_url}}
+<div >
+  {{return$[0].avatar_url}}
+  {{return$[0].login}}
+<p>{{return$.login}}</p>
+</div>
