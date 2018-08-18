@@ -17,8 +17,8 @@
     I am based at {{display$.location}}<br>
   </div>
 </div>
-<div class="col-md-7">
-  REpositories
+<div id="repo" class="col-md-4">
+  <h1>REPOSITORIES</h1>
 <div *ngFor='let repo of repo$ , let i = index'>
       <h2>{{repo$[i].name}}</h2><br>
   <a href='https://github.com/DK-denno/{{repo$[i].name}}'>Click here to view repository on github site</a>
