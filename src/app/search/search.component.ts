@@ -21,7 +21,7 @@ export class SearchComponent implements OnInit {
 
   search(keyword) {
     this._service.searching(keyword.value).subscribe(data => {
-      this.return$ = data.items;
+      this.return$ = data;
       console.log(this.return$);
 
 
