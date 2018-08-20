@@ -5,6 +5,9 @@ button:hover{
   background-color:navy;
 
 }
+.col-md-6 #text{
+  margin-top: 400px;
+}
 button{
   width: 150px;
 

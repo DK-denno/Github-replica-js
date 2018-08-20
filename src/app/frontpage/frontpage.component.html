@@ -2,36 +2,39 @@
 <br>
 <div class='container'>
 <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-<div class="text"><h2 id="header">{{display$.login}}</h2></div><br>
+<div class="row">
+  <div class="col-md-6">
+    <div class="text"><h2 id="header">{{display$.login}}</h2></div><br>
 
-<img  src="{{display$.avatar_url}}"  alt="{{display$.login}}"><br>
-  <div class="text">
-    Github ID:{{display$.id}}<br>
-    Contact me @<a href="mailto:{{display$.email}}">{{display$.email}}</a><br>
-    followed by {{display$.followers}}<br>
-    following {{display$.following}}<br>
-    I am based at {{display$.location}}<br>
+      <img  src="{{display$.avatar_url}}"  alt="{{display$.login}}"><br>
+    </div>
+    <div class="col-md-6" id='text'>
+        <div class="text">
+          Github ID:{{display$.id}}<br>
+          Contact me @<a href="mailto:{{display$.email}}">{{display$.email}}</a><br>
+          followed by {{display$.followers}}<br>
+          following {{display$.following}}<br>
+          I am based at {{display$.location}}<br>
+        </div>
+      </div>
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div id="repo">
+      <h1>REPOSITORIES</h1>
+      <div *ngFor='let repo of repo$ , let i = index' id="card">
+        <div class="card">
+          <h2>{{repo$[i].name}}</h2><br>
+          <button class="btn btn-default"><a href='https://github.com/DK-denno/{{repo$[i].name}}'>LIVE SITE</a></button>
+<br>
+<br>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div id="repo">
-  <h1>REPOSITORIES</h1>
-
-
-
-<div *ngFor='let repo of repo$ , let i = index' id="card">
-  <div class="card">
-      <h2>{{repo$[i].name}}</h2><br>
-<button class="btn btn-default"><a href='https://github.com/DK-denno/{{repo$[i].name}}'>LIVE SITE</a></button>
 <br>
 <br>
-</div>
-<br>
-<br>
-</div>
-  </div>
-</div>
+          </div>
+        </div>
+      </div>
