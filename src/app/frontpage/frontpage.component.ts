@@ -22,7 +22,7 @@ export class FrontpageComponent implements OnInit {
     });
     this._service.repository().subscribe(repo => {
       this.repo$ = repo;
-      // console.log(repo);
+      console.log(repo);
     });
   }
 
