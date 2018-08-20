@@ -1,7 +1,7 @@
 
 <div class="container">
   <form id="searchbar">
-  <input type="text" #keyword name="keyword" placeholder="search">
+  <input type="text"(keyup)='search(keyword)' #keyword name="keyword" placeholder="search">
   <input type="button" (click)="search(keyword)" value="search">
 </form>
 <div class="container">
