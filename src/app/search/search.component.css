@@ -6,10 +6,15 @@ body{
 }
 .container{
   background-color: lightblue;
-  padding: 300px;
+
 }
 .result{
   margin-bottom: 100px;
   margin-top: 10px;
   float: left;
+}
+.card{
+  width: 200px;
+
+
 }

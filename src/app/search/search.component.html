@@ -5,19 +5,23 @@
 <div class="container">
   <div class="result">
 
-<!-- <img src="{{return$[0].avatar_url}}" >
-<br>
-    <h1>{{return$[0].login}}</h1><br>
-    <a href='https://github.com/{{return$[0].login}}'>{{return$[0].login|uppercase}}</a>
-    {{return[0].url}}<br>
-    {{return$[0].followers_url}}
-    {{return$[0].following_url}}
-    {{return[0].repos_url}}<br>
-
-  </div> -->
   <div class="loop">
     <div class="forloop" *ngFor=' let return of  return$, let i = index'>
-    <img src="{{return$[i].avatar_url}}" alt="">
+      <div class='row'>
+        <div class="col-md-5">
+          <div class="card">
+            <img src="{{return$[i].avatar_url}}" width="200" height="200" alt="">
+          </div>
+        </div>
+        <div class="col-md-5">
+
+          Name:{{return$[i].login}}<br>
+          GITHUB LINK:<a href='https://github.com/{{return$[i].login}}'>{{return$[i].login}}</a><br>
+        </div>
+
   </div>
+  <br>
+  <br>
+  <br>
 
     </div>
