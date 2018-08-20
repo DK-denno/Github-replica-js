@@ -1,0 +1,6 @@
+.container{
+  background-image: url('https://cdn.newsapi.com.au/image/v1/76ec1e249ee72851d05ff7dc549f2a3b');
+  background-size: cover;
+  padding: 200px;
+  background-repeat: no-repeat;
+}

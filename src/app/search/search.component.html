@@ -8,11 +8,11 @@
 <br>
   {{return$[0].login}}<br>
   {{return[0].url}}<br>
-    {{return$.followers_url}}
-    {{return$.following_url}}
+    {{return$[0].followers_url}}
+    {{return$[0].following_url}}
 
     <div *ngFor='let i = index'>
-      <a href='https://api.github.com/users/{{return$[0].login}}/repos'>repo</a>
+      <a href='https://api.github.com/users/{{return$[0].login}}/repos'>{{return$[0].name}}</a>
     </div>
   {{return[0].repos_url}}<br>
 </div>

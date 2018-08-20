@@ -26,3 +26,7 @@ a{
   background-size:contain;
 
 }
+img{
+  radius: 50%;
+
+}

@@ -17,15 +17,20 @@ export class SearchComponent implements OnInit {
 
   return$;
 
-  constructor( private http: HttpClient, _sevice: ApiRequestService,   ) { }
+  constructor( private http: HttpClient, public  _service: ApiRequestService) { }
 
-  search(keyword) {
-    this.http.get
-    ('https://api.github.com/search/users?q=' + keyword.value )
-    .subscribe(data => {
+  search(keyword.value) {
+    this._service.searching(keyword.value).subscribe(data => {
       this.return$ = data.items;
       console.log(this.return$);
-      // console.log(this.return$.items[0].login);
+
+
+    // this.http.get
+    // ('https://api.github.com/search/users?q=' + keyword.value )
+    // .subscribe(data => {
+    //   this.return$ = data.items;
+    //   console.log(this.return$);
+    //   // console.log(this.return$.items[0].login);
 
     });
     // console.log(return$.data.items[0].login);
