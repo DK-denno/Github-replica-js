@@ -1,4 +1,6 @@
-<form id="searchbar">
+
+<div class="container">
+  <form id="searchbar">
   <input type="text" #keyword name="keyword" placeholder="search">
   <input type="button" (click)="search(keyword)" value="search">
 </form>
@@ -13,7 +15,7 @@
             <img src="{{return$[i].avatar_url}}" width="200" height="200" alt="">
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-6">
 
           Name:{{return$[i].login}}<br>
           GITHUB LINK:<a href='https://github.com/{{return$[i].login}}'>{{return$[i].login}}</a><br>
@@ -25,3 +27,4 @@
   <br>
 
     </div>
+</div>

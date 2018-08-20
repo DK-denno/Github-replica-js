@@ -13,7 +13,8 @@ import { ZErrorComponent } from './z-error/z-error.component';
 const routes: Routes = [
   {path: 'frontpage', component: FrontpageComponent },
   {path: 'search', component: SearchComponent },
-  {path: '', component: ZErrorComponent }
+  {path: '', redirectTo: '/frontpage', pathMatch: 'full'},
+  {path: '**', component: ZErrorComponent }
 ];
 
 @NgModule({

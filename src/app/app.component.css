@@ -1,9 +1,18 @@
 .title{
-  margin-left: 550px;
+  margin-left: 500px;
+  color: white;
+  font-family: 'Ewert', cursive;
 }
 .route{
-
   padding: 20px;
+  margin-left: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+.route:hover{
+  background-color: blue;
+  border-color: yellow;
+
 
 }
 .container{
