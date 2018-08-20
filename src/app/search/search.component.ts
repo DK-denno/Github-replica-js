@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { FrontpageComponent } from '../frontpage/frontpage.component';
 import { environment } from '../../environments/environment';
 import { Search } from '../search';
+import { HighlightDirective } from '../highlight.directive';
 
 
 @Component({
@@ -21,8 +22,8 @@ export class SearchComponent implements OnInit {
 
   search(keyword) {
     this._service.searching(keyword.value).subscribe(data => {
-      this.return$ = data.items;
-      console.log(this.return$);
+      this.return$ = data;
+      console.log(data);
 
 
     // this.http.get

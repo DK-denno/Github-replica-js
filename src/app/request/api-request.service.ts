@@ -17,7 +17,7 @@ export class ApiRequestService {
 
   searching(keyword) {
     return this.http.get
-    ('https://api.github.com/search/users?q=' + keyword );
+    ('https://api.github.com/users/' + keyword + '?access_token=' + environment.apiUrl);
 
   }
   constructor(private http: HttpClient) {}

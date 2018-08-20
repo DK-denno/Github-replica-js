@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ApiRequestService } from '../request/api-request.service';
+import { HighlightDirective } from '../highlight.directive';
 
 @Component({
   selector: 'app-frontpage',

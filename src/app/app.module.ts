@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { HighlightDirective } from './highlight.directive';
 
 import { ApiRequestService } from './request/api-request.service';
 
@@ -9,6 +10,7 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
 import { ZErrorComponent } from './z-error/z-error.component';
+
 
 const routes: Routes = [
   {path: 'frontpage', component: FrontpageComponent },
@@ -22,7 +24,8 @@ const routes: Routes = [
     AppComponent,
     SearchComponent,
     FrontpageComponent,
-    ZErrorComponent
+    ZErrorComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

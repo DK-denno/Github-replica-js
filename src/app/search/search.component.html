@@ -10,17 +10,16 @@
     <br>
     <br>
   <div class="loop">
-    <div class="forloop" *ngFor=' let return of  return$, let i = index'>
       <div class='row'>
         <div class="col-md-5">
           <div class="card">
-            <img src="{{return$[i].avatar_url}}" width="200" height="200" alt="">
+            <img src="{{return$.avatar_url}}" width="200" height="200" alt="">
           </div>
         </div>
         <div class="col-md-6">
 
-          Name:{{return$[i].login}}<br>
-          GITHUB LINK:<a href='https://github.com/{{return$[i].login}}'>{{return$[i].login}}</a><br>
+          Name:{{return$.login}}<br>
+          GITHUB LINK:<a href='https://github.com/{{return$.login}}'>{{return$.login}}</a><br>
         </div>
 
   </div>
