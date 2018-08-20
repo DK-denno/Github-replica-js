@@ -4,7 +4,7 @@
 <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 <div class="row">
   <div class="col-md-6">
-    <div class="text"><h2 id="header">{{display$.login}}</h2></div><br>
+    <div class="text"><h2 id="header">{{display$.login|uppercase}}</h2></div><br>
 
       <img  src="{{display$.avatar_url}}"  alt="{{display$.login}}"><br>
     </div>
@@ -14,7 +14,7 @@
           Contact me @<a href="mailto:{{display$.email}}">{{display$.email}}</a><br>
           followed by {{display$.followers}}<br>
           following {{display$.following}}<br>
-          I am based at {{display$.location}}<br>
+          Based at {{display$.location}}<br>
         </div>
       </div>
     </div>
@@ -29,7 +29,7 @@
       <div *ngFor='let repo of repo$ , let i = index' id="card">
         <div class="card">
           <h2>{{repo$[i].name}}</h2><br>
-          <button class="btn btn-default"><a href='https://github.com/DK-denno/{{repo$[i].name}}'>LIVE SITE</a></button>
+          <button class="btn btn-default"><a target='_blank' href='https://github.com/DK-denno/{{repo$[i].name}}'>LIVE SITE</a></button>
 <br>
 <br>
   </div>
