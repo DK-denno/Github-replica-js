@@ -1,18 +1,23 @@
 <form id="searchbar">
   <input type="text" #keyword name="keyword" placeholder="search">
-<input type="button" (click)="search(keyword)" value="search">
+  <input type="button" (click)="search(keyword)" value="search">
 </form>
+<div class="container">
+  <div class="result">
 
-<div >
-<img src="{{return$[0].avatar_url}}" >
+<!-- <img src="{{return$[0].avatar_url}}" >
 <br>
-  {{return$[0].login}}<br>
-  {{return[0].url}}<br>
+    <h1>{{return$[0].login}}</h1><br>
+    <a href='https://github.com/{{return$[0].login}}'>{{return$[0].login|uppercase}}</a>
+    {{return[0].url}}<br>
     {{return$[0].followers_url}}
     {{return$[0].following_url}}
+    {{return[0].repos_url}}<br>
 
-    <div *ngFor='let i = index'>
-      <a href='https://api.github.com/users/{{return$[0].login}}/repos'>{{return$[0].name}}</a>
+  </div> -->
+  <div class="loop">
+    <div class="forloop" *ngFor=' let return of  return$, let i = index'>
+    <img src="{{return$[i].avatar_url}}" alt="">
+  </div>
+
     </div>
-  {{return[0].repos_url}}<br>
-</div>

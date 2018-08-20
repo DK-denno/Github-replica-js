@@ -9,16 +9,27 @@ button{
   width: 150px;
 
 }
+h2 header{
+  font-family: 'Press Start 2P', cursive;
+
+}
+
+#repo{
+  background-color: black;
+  padding:30px;
+}
 a{
   text-decoration: none;
 }
 .card{
   width: 550px;
   padding-left: 200px;
+  margin-right: 100px;
 
 }
 #card{
-  padding-left: 350px;
+  padding-left: 200px;
+  margin-right: 300px;
 }
 .container{
   background-image:url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&h=350');
@@ -27,6 +38,5 @@ a{
 
 }
 img{
-  radius: 50%;
-
+  radius: 56%;
 }

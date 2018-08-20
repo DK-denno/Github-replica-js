@@ -8,12 +8,12 @@ import { ApiRequestService } from './request/api-request.service';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
-import { ErrorComponent } from './error/error.component';
+import { ZErrorComponent } from './z-error/z-error.component';
 
 const routes: Routes = [
   {path: 'frontpage', component: FrontpageComponent },
   {path: 'search', component: SearchComponent },
-  {path: '**', component: ErrorComponent }
+  {path: '', component: ZErrorComponent }
 ];
 
 @NgModule({
@@ -21,7 +21,7 @@ const routes: Routes = [
     AppComponent,
     SearchComponent,
     FrontpageComponent,
-    ErrorComponent
+    ZErrorComponent
   ],
   imports: [
     BrowserModule,

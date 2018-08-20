@@ -19,7 +19,7 @@ export class SearchComponent implements OnInit {
 
   constructor( private http: HttpClient, public  _service: ApiRequestService) { }
 
-  search(keyword.value) {
+  search(keyword) {
     this._service.searching(keyword.value).subscribe(data => {
       this.return$ = data.items;
       console.log(this.return$);
